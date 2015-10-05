@@ -1,0 +1,13 @@
+#container {
+    width:100%;
+    text-align:center;
+}
+#container > div {
+    width: calc(100% / 5);  
+    display: inline-block;
+    vertical-align: top;   
+    border:1px solid red;
+    text-align:center;
+    margin:2%;    
+    padding:20px;
+}
