@@ -3,14 +3,16 @@
     text-align:center;
 }
 #container > div {
-    width: calc(100% / 5);  
+    width: calc(100% / 3.1);  
+    height: calc(100% / 3.1);
     display: inline-block;
-    vertical-align: top;   
+    vertical-align: center;   
     border:1px solid red;
     text-align:center;
-    margin:2%;    
-    padding:20px;
-    background-color: #FF0000;
-    
-    
+    margin:0.2%;    
+    padding:1px;
+    background-color: #FF0000; 
+}
+#text {
+    text-align: center;
 }
