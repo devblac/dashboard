@@ -20,12 +20,8 @@ $(document).ready(function() {
     	$('div #i').resizable();
     };	*/	
     	
-    $('#1, #2, #3, #4, #5, #6, #7, #8, #9').draggable(function(){
-        
-    });
-    $('#1, #2, #3, #4, #5, #6, #7, #8, #9').resizable(function(){
-        
-    });
+    $('#1, #2, #3, #4, #5, #6, #7, #8, #9').draggable();
+    $('#1, #2, #3, #4, #5, #6, #7, #8, #9').resizable();
 
     
     $('div').mouseenter(function() { 
