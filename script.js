@@ -3,7 +3,7 @@
 var crearDivs = function(){
 	for (i=1;i<10;i++){
         console.log(i);
-        var d = document.createElement("div");
+        var d = document.createElement("<div></div>");
 	};
 };
 
@@ -19,8 +19,6 @@ $(document).ready(function() {
     $('#main').draggable();
     $('#main').resizable();
 });
-
-
 
 
 crearDivs();
