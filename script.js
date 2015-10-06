@@ -3,7 +3,12 @@
 var crearDivs = function(){
 	for (i=1;i<10;i++){
         console.log(i);
-        var d = document.createElement("<div></div>");
+        
+        var divElement = document.createElement("div");        // Create a <button> element
+		var divTextElement = document.createTextNode(i);       // Create a text node
+		divElement.appendChild(divTextElement);                                // Append the text to <button>
+		document.body.appendChild(divElement);
+
 	};
 };
 
