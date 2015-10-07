@@ -29,7 +29,7 @@
     float: left; 
     width: calc(100% / 3.1); 
     height: calc(100% / 3.1); 
-    font-size: 4em; 
+    font-size: 3em; 
     text-align: center; 
     background-color: #FF0000; 
 }
@@ -37,4 +37,11 @@
 #text {
     text-align: center;
     color: white;
+}
+
+.ui-icon-close {
+    position: absolute; 
+    top: 0px; 
+    right: 0px;
+    
 }
