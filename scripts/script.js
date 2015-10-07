@@ -1,6 +1,6 @@
 
 
-/*
+/* Intento fallido para crear los divs desde JS
 var crearDivs = function(){
 	for (i=1;i<10;i++){
         console.log(i);
@@ -15,30 +15,55 @@ var crearDivs = function(){
 };
 */
 $(document).ready(function() {
-    /*
+    
+    /* Intento fallido de mover y resizear divs. 
+
     var divsArray = [1,2,3,4,5,6,7,8,9];
     for (i=0;i<divsArray.length;i++){
         $('div #i').draggable();
     	$('div #i').resizable();
     };	*/	
-    	/*
+    
+
+    	/* Primer intento (satisfactorio) de mover y resizear divs:
     $('#1, #2, #3, #4, #5, #6, #7, #8, #9').draggable();
     $('#1, #2, #3, #4, #5, #6, #7, #8, #9').resizable();
         */
+    
 
+        /* Método optimizado para mover y resizear los divs:
     for (i=0;i<10;i++){
         $('#'+i+'').draggable();
-        $('#'+i+'').resizable();
-    };
-    
-        $('.box').mouseenter(function() { 
-            $(this).fadeTo('fast','0.4');
-        });
+        $('#'+i+'').resizable();  
+    };  */
+
+    $('li').mouseenter(function() { 
+        $(this).draggable();
+    });
+
+    $('li').mouseenter(function() { 
+        $(this).resizable();
+    });
+
+    $('li').mouseenter(function() { 
+        $(this).fadeTo('fast','0.6');
+    });
+
+    /* $('#'+i+'').resizable(); */
+
+    $('li').mouseenter(function() { 
+        $(this).fadeTo('fast','0.6');
+    });
         
-        $('.box').mouseleave(function() { 
-            $(this).fadeTo('fast','1');
-        });
+    $('li').mouseleave(function() { 
+        $(this).fadeTo('fast','1');
+    });
+    
+    $( "#sortable" ).sortable();
+    $( "#sortable" ).disableSelection();s
 });
+
+
 
 /*
 '#'+this.id
