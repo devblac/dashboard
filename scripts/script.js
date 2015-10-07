@@ -36,11 +36,11 @@ $(document).ready(function() {
         $('#'+i+'').draggable();
         $('#'+i+'').resizable();  
     };  */
-
+    /*
     $('li').mouseenter(function() { 
         $(this).draggable();
     });
-
+    */
     $('li').mouseenter(function() { 
         $(this).resizable();
     });
