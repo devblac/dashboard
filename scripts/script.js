@@ -16,7 +16,7 @@ var crearDivs = function(){
 */
 $(document).ready(function() {
     
-    /* Intento fallido de mover y resizear divs. 
+    /* Intento cero de mover y resizear divs. 
 
     var divsArray = [1,2,3,4,5,6,7,8,9];
     for (i=0;i<divsArray.length;i++){
@@ -50,33 +50,13 @@ $(document).ready(function() {
     });
     */
     /* $('#'+i+'').resizable(); */
-    $('#span-close-1').click(function(){
-        $('#li1').hide();
+
+
+    $('div.box').click(function(){
+        $(this).hide();
+        $(this).parent('li').hide();
     });
-    $('#span-close-2').click(function(){
-        $('#li2').hide();
-    });
-    $('#span-close-3').click(function(){
-        $('#li3').hide();
-    });
-    $('#span-close-4').click(function(){
-        $('#li4').hide();
-    });
-    $('#span-close-5').click(function(){
-        $('#li5').hide();
-    });
-    $('#span-close-6').click(function(){
-        $('#li6').hide();
-    });
-    $('#span-close-7').click(function(){
-        $('#li7').hide();
-    });
-    $('#span-close-8').click(function(){
-        $('#li8').hide();
-    });
-    $('#span-close-9').click(function(){
-        $('#li9').hide();
-    });
+
     /*
     $('li').mouseenter(function() { 
         $(this).fadeTo('fast','0.6');
@@ -88,6 +68,7 @@ $(document).ready(function() {
     */
     $( "#sortable" ).sortable();
     $( "#sortable" ).disableSelection();
+    $( "#sortable" ).selectable();
 });
 
 
