@@ -17,6 +17,34 @@ $(document).ready(function() {
         $(this).parent('li').hide();
     });
 
+    /*
+    $("div").height("100px");
+    $("div").width("50px");
+    $("div").css("background-color","#008800");
+    
+    $p = $('p');
+    $p = $("<p>I'm a new paragraph!</p>")
+
+    $(".info").append("<p>Stuff!</p>");
+    $(".info").prepend("<p>Stuff!</p>");
+    $('<p>Stuff!</p>').appendTo('.info');
+    .prependTo()
+    $('target').after('<tag>To add</tag>');
+
+    var $paragraph = $("p"); // existing element
+    $("div").after($paragraph); // Move it!
+    // Same as:
+    $("div").after($("p"));
+    
+    .remove()
+    .empty() // Deletes all its decendants.
+
+    $('selector').addClass('className');
+    $('selector').removeClass('className');
+
+    .toggleClass()
+
+    */
 
     // Hacer fades a los boxes al pasar, el fadeOut verifica si es visible ó no:
     $('li').mouseenter(function() { 
